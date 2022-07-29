@@ -1,0 +1,4 @@
+1. Take three inputs and display the greatest number
+2. Check if a number is even or odd
+3. Check if a number is a palindrome or not thorugh CLI
+4. Display Fibonacci series through CLI using loops
