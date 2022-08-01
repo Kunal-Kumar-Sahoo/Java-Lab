@@ -1,0 +1,7 @@
+- Connect our resource with the target for which we need to take input
+- Resource could be a keyboard
+- Via 'NodeStream' input bits are coming from resource to target
+- NodeStream requires additional processing upon the NodeStream during input
+- NodeStream continuously takes input in the form of bits and additional processing actually manipulates those bits to accept int, char, etc.
+- Additional processing is called 'FilterStream'
+- InputStreamReader (= NodeStream); FliterStream (= BufferedReader)
