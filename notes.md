@@ -52,4 +52,41 @@ The internal architecture of JVM:
 
 ![image6](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/02/Components-of-JDK.png)
 
-#### Q. How does JVM recognized the main() method in a class?
+#### Syntax for main() method:
+        ``public static void main(String[] args)``
+        - public: makes the method accessible outside the class by any other class
+        - static: No object is required to invoke the main method.
+                -  Static method, static data are the properties of the class and is common for all the objects.
+        - void: No return type
+        - String args[]: an array of Strings, this is used for command-line arguments to main method at the time of invocation
+
+#### First Java program
+
+#### Dynamic Linking
+        - This is used by the Java interpreter to launch the program by invoking the **main** method of the class identified in the command to start the program.
+        - All address resoulution is done at runtime by JVM
+        - JVM calls main() method using its **Classname.main()** at the time of running the program.
+        - main() needs to be public to be accessed by JVM
+
+**Variable**: It is a named memory location capable of holding some value that can be modified by the program.
+
+In Java there are three types of variables:
+1. Local: Any variable declared inside a method which has no scope outside that method.
+2. Instance: Any variable declared within the class but outside all the methods and within the main() method.
+3. Static: Any variable which maintains its integrity inside and outside methods.
+   - Static variable is a variable of class and not an object of the class.
+
+**Data type**: The type of data which a variable can store is called data type of the variable.
+
+#### Primitive Data Types in Java:
+  - byte -> 8 bits -> Default value = 0 
+  - short -> 16 bits -> Default value = 0 
+  - int -> 32 bits -> Default value = 0
+  - long -> 64 bits -> Default value = 0
+  - float -> 32 bits -> Default value = 0.0f
+  - double -> 64 bits -> Default value = 0.0
+  - char -> 16 bits -> Default value = 'u000'
+  - boolean -> JVM Dependent -> Default value = false;
+
+#### Data type operations: Widening and Narrowing
+
