@@ -89,4 +89,8 @@ In Java there are three types of variables:
   - boolean -> JVM Dependent -> Default value = false;
 
 #### Data type operations: Widening and Narrowing
-
+Widening: Storing the value of a particular datatype into another variable of datatype of larger size.<br>
+Example: <br>
+int a = 10; <br>
+float b = a; <br>
+System.out.println()

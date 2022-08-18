@@ -23,7 +23,7 @@ class Assignment3 {
                 case '-' -> answer = number1 - number2;
                 case '*' -> answer = number1 * number2;
                 case '%' -> answer = number1 % number2;
-                case '/' -> answer = (double)number1 / number2;
+                case '/' -> answer = number1 / number2;
                 default -> System.out.println("Invalid operation");
             }
             System.out.println("Answer: " + answer);
