@@ -1,36 +1,26 @@
-// Write a java program to perform mathematical operations on 2 numbers
-
-import java.util.Scanner;
+import java.util.*;
 
 class Assignment3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Enter first number: ");
-        int number1 = sc.nextInt();
-    
-        System.out.print("Enter an operator (+, -, *, /, %): ");
-        char operator = sc.next().charAt(0);
-
-        System.out.print("Enter second number: ");
-        int number2 = sc.nextInt();
-
-        double answer = 0;
-
+        System.out.println("Enter a mathematical expression containing two operands and an operation(+,-,*,/,%,^):");
+        double a = sc.nextDouble();
+        char op = sc.next().charAt(0);
+        double b = sc.nextDouble();
+        double ans = 0;
         try {
-            switch(operator) {
-                case '+' -> answer = number1 + number2;
-                case '-' -> answer = number1 - number2;
-                case '*' -> answer = number1 * number2;
-                case '%' -> answer = number1 % number2;
-                case '/' -> answer = number1 / number2;
-                default -> System.out.println("Invalid operation");
+            switch(op) {
+                case '+' -> ans = a+b;
+                case '-' -> ans = a-b;
+                case '*' -> ans = a*b;
+                case '/' -> ans = a/b;
+                case '%' -> ans = a%b;
+                case '^' -> ans = Math.pow(a, b);
+                default -> System.out.println("Enter a correct operation!");
             }
-            System.out.println("Answer: " + answer);
-        } catch(Exception e) {
-            System.out.println(e);
-        }
-        
+            System.out.println("Answer: " + ans);
+        } catch(Exception e) {System.out.println(e);}
+
         sc.close();
     }
 }

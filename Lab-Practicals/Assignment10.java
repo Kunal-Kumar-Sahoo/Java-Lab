@@ -1,43 +1,30 @@
-/*
-Write an interactive program to print a diamond shape. For example, if user enters the number 3, the diamond will be as follows:
-  *
- * *   
-* * *
- * *
-  *
-
-*/
-
-import java.io.*;
+import java.util.*;
 
 class Assignment10 {
-    public static void main(String[] args) throws Exception {
-        InputStreamReader input = new InputStreamReader(System.in);
-        BufferedReader buffer = new BufferedReader(input);
-      
-        drawDiamond(Integer.parseInt(buffer.readLine()));
-    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int n = sc.nextInt();
 
-    private static void drawDiamond(int rows) {
         // upper half
-        for(int i=0; i<rows; i++) {
+        for(int i=0; i<n; i++) {
             // spaces
-            for(int j=i; j<rows; j++)
+            for(int j=0; j<n-i-1; j++)
                 System.out.print(" ");
-            // characters
+            // stars
             for(int j=0; j<=i; j++)
                 System.out.print("* ");
             System.out.println();
         }
         // lower half
-        for(int i=0; i<rows-1; i++) {
-            // spaces
-            for(int j=0; j<=i+1; j++)
+        for(int i=0; i<n-1; i++) {
+            for(int j=0; j<=i; j++)
                 System.out.print(" ");
-            // characters
-            for(int j=rows-1; j>i; j--)
+            for(int j=0; j<n-1-i; j++)
                 System.out.print("* ");
             System.out.println();
         }
+
+        sc.close();
     }
 }
