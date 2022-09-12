@@ -43,7 +43,7 @@ class Assignment15 {
         int rows1 = mat1.length; int cols1 = mat1[0].length;
         int rows2 = mat2.length; int cols2 = mat2[0].length;
 
-        if(rows1 != cols2) {
+        if(cols1 != rows2) {
             System.out.println("Enter matrices of compatible dimensions");
             return new int[][] {{0}};
         }
@@ -57,5 +57,4 @@ class Assignment15 {
 
         return mat3;
     }
-
 }
