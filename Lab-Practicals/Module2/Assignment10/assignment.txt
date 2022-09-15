@@ -1,0 +1,15 @@
+base class employee
+    name, id
+    accept(), disp()
+
+derived class display
+    school
+    accept(), disp()
+
+derived class engineer
+    company
+    accept(), disp()
+
+derived class driver
+    carname
+    accept(), disp()

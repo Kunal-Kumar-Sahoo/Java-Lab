@@ -1,0 +1,38 @@
+Example 1 (Simple inheritance):
+    Base: Student class
+        rno, name
+        disp(), getter(), constructor()
+
+    Derived: Engineering student class
+        branch
+        disp(), getter(), constructor()
+
+Example 2 (Multilevel inheritance):
+    Super Base: Student class
+        rno, name
+        disp(), getter(), constructor()
+
+    Base: Engineering student class
+        branch
+        disp(), getter(), constructor()
+
+    Derived class: CSE student class
+        laptop, programming language
+        disp(), getter(), constructor()
+
+Example 3 (Heirarchical inheritance):
+    Super Base: Student class
+        rno, name
+        disp(), getter(), constructor()
+
+    Base: Engineering student class
+        branch
+        disp(), getter(), constructor()
+
+    Derived class 1: CSE student class
+        laptop, programming language
+        disp(), getter(), constructor()
+
+    Derived class 2: Automobile student class
+        laptop, programming language
+        disp(), getter(), constructor()
