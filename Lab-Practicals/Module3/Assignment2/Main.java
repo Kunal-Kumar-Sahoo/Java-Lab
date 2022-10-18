@@ -1,33 +1,26 @@
 import java.io.*;
+import java.util.*;
 
 
 class Main {
 	public static void main(String[] args) {
-		String filePath = "./file.txt";
-		fileStats(filePath);
+		String inputFilePath = "./input.txt";
+		String outputFilePath = "./output.txt";
+		capitalizeFile(inputFilePath, outputFilePath);
 	}
 
-	static void fileStats(String filePath) {
-		int sentences = 0, words = 1, characters = 0;
-		char[] terminators = {'.', '?', '!'};
+	static void capitalizeFile(String inputFilePath, String outputFilePath) {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(filePath));
-			for(char[] s = (br.readLine()).toCharArray(); s != null; s = (br.readLine()).toCharArray()) {
-				for(char c: s) {
-					characters++;
-					for(char x: terminators)
-						if(x == c)
-							sentences++;
-					if(c == ' ') words++;
-				}
-			}
+			BufferedReader br = new BufferedReader(new FileReader(inputFilePath));
+			PrintWriter pr = new PrintWriter(new FileWriter(outputFilePath));
+			String s;
+			for(s = br.readLine(); s != null; s = br.readLine())
+				pr.println(s.toUpperCase());
+			System.out.println("File written successfully");
 			br.close();
-		} catch(Exception e) { System.out.println(filePath); }
-			
+			pr.flush();
+			pr.close();
 
-		System.out.println("Sentences: " + sentences);
-		System.out.println("Words: " + words);
-		System.out.println("Characters: " + characters);
-
+		} catch(Exception e) { System.out.println("File error: " + e); }
 	}
 }
