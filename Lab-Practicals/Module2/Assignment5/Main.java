@@ -35,7 +35,7 @@ public class Main {
 
         try {
             o1.mark = sc.nextInt();
-            o1.age = sc.nextInt();
+            // o1.age = sc.nextInt();
         } catch(Exception e) {System.out.println(e);}
         
         o2.setData();
@@ -51,7 +51,7 @@ public class Main {
         System.out.println("Mark: " + o2.mark);
 
         try {
-            o1.x = 69;
+            // o1.x = 69;
         } catch(Exception e) {System.out.println(e);}
     }
 }

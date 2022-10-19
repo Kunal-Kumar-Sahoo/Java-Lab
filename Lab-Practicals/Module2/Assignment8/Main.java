@@ -20,6 +20,7 @@ class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println("Default constructor");
         Main o1 = new Main();
         o1.disp();
     }

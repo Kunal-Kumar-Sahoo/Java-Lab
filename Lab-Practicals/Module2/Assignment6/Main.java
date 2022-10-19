@@ -5,7 +5,6 @@ class Main {
         System.out.println("Number of names passed: " + names.length);
         for(String name: names) 
             System.out.println(name);
-        System.out.println();
     }
 
     public static void main(String[] args) {

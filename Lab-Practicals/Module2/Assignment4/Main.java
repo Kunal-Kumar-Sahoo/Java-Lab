@@ -10,10 +10,10 @@ class Main {
         s1.display();
 
         System.out.println("Parameterized constructor for s2:");
-        System.out.print("Enter roll number: ");
-        int roll = sc.nextInt();
         System.out.print("Enter name of the student: ");
         String name = sc.nextLine();
+        System.out.print("Enter roll number: ");
+        int roll = sc.nextInt();
         System.out.print("Enter CGPA: ");
         float cgpa = sc.nextFloat();
         s2 = new Student(roll, name, cgpa);
