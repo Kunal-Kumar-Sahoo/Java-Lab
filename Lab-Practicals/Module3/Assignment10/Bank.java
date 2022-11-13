@@ -1,5 +1,4 @@
 import java.util.*;
-
 class InsufficientFunds extends Exception {
     private String msg;
     public InsufficientFunds(String s) {
@@ -9,7 +8,6 @@ class InsufficientFunds extends Exception {
         return this.msg;
     }
 }
-
 public class Bank {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

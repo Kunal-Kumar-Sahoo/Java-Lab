@@ -33,6 +33,7 @@ class Student {
             System.out.print("Enter new discipline: ");
             id_ = 2;
         }
+        sc.nextLine();
         String s_ = sc.nextLine();
         System.out.println(s_);
         if(id_ >= 1 && id_ <= 3)

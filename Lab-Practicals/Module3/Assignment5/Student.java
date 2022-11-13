@@ -32,11 +32,12 @@ class Student {
         sc.nextLine();
         String s_ = sc.nextLine();
         System.out.println(s_);
-        if(id_ >= 1 && id_ <= 3)
+        if(id_ >= 0 && id_ <= 2)
             arr.set(id_, s_);
         PrintWriter fout = new PrintWriter(new FileWriter("student.txt"));
         for(int i = 0; i < arr.size(); i++)
             fout.println(arr.get(i));
+        fout.flush();
         fout.close();
         
     }    
