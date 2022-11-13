@@ -2,8 +2,8 @@ import javax.swing.*;
 import java.util.*;
 import java.awt.*;
 
-public class Assignment1 {
-    public Assignment1() {
+public class Assignment6 {
+    public Assignment6() {
         JFrame f = new JFrame("Checkbox Example");
         String[] langs = {"C++", "Java", "Python", "Go"};
 
@@ -29,6 +29,6 @@ public class Assignment1 {
     }
 
     public static void main(String[] args) {
-        new Assignment1();
+        new Assignment6();
     }
 }

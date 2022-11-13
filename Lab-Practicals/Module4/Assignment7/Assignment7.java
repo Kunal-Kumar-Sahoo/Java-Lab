@@ -49,8 +49,8 @@ class Student {
     }
 }
 
-public class Assignment2 {
+public class Assignment7 {
     public static void main(String[] args) {
-        Student s = new Student();
+        new Student();
     }
 }
